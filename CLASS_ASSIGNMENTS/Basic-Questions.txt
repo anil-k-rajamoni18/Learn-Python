@@ -1,0 +1,81 @@
+
+Q1 : Given two numbers num1 and num2. 
+	The task is to write a Python program to find the addition of these two numbers. 
+Examples:
+
+Input: num1 = 5, num2 = 3
+Output: 8
+
+Input: num1 = 13, num2 = 6
+Output: 19
+
+NOTE: read numbers from console. (dynamic input)
+
+###################################################################
+
+Q2: Simple interest formula is given by: 
+	Simple Interest = (P x T x R)/100 
+	Where, P is the principal amount 
+	T is the time and 
+	R is the rate
+	
+EXAMPLE1:
+Input : P = 10000
+        R = 5
+        T = 5
+Output :2500.0
+We need to find simple interest on 
+Rs. 10,000 at the rate of 5% for 5 
+units of time.
+
+EXAMPLE2:
+Input : P = 3000
+        R = 7
+        T = 1
+Output :210.0
+
+
+#############################################################################
+Q3: Write a program to find CI 
+	The formula to calculate compound interest annually is given by: 
+
+		A = P(1 + R/100) t 
+
+		Compound Interest = A – P 
+
+		Where, 
+		A is amount 
+		P is the principal amount 
+		R is the rate and 
+		T is the time span
+		
+	Input: Principal (amount): 1200, Time: 2, Rate: 5.4
+	Output: Compound Interest = 133.099243
+	
+#################################################################################
+Q4: Write A program ,to print its ASCII value  for given characterin Python. 
+	Examples :
+
+    Input : a 
+    Output : 97
+
+    Input : D
+    Output : 68
+##################################################################################
+Q5: Write a Program to Find the Square Root 
+
+	Input: 8
+	output: The square root of 8.000 is 2.828
+	
+	Program to Calculate the Area of a Triangle
+	
+	input: 
+		a = 5
+		b = 6
+		c = 7
+	output:
+		The area of the triangle is 14.70
+		
+	s = (a+b+c)/2
+	s = sqrt(s*(s-a) 
+	
