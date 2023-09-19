@@ -1,0 +1,178 @@
+
+1910-1920 
+-----------------------
+==> Binary Level Lang/Machine/Low Level 
+- Writing instructions in 0's and 1's 
+- Development of s/w: will time 
+- Difficult to learn / understand .
+
+00010 100101
+000010 10000
+
+
+=== Assembly Level/Middle level (1940-1950)
+=================================
+- Writing instrucions in Mnemonics(instrucions sets)
+- Bit easy to learn / understandable.
+
+READ RX1 10
+READ RX2 20
+ADD RX1 RX2 
+
+====> High Level Languages(1970-till date)
+===================================
+- Writing instructions in simple plain english by following syntax + grammer of specific language.
+- Compiler & interpreter ---->for convertion into BL .
+
+
+
+int x = 5;
+int y = 6;                 --->   compiler ---------------> 0'1 , 1's ---> CPU 
+int sum = x + y;
+System.out.println(sum);
+
+
+
+
+ex: c , c++ . java . python , js , scala . ruby etc 
+c --> .c 
+c++ --> .cpp
+java ---> .java
+python ---> .py
+javascript --> .js
+
+
+compiled languages :
+======================
+- strict type checking languages 
+- ex: c , c++ , java 
+- fast in compilation
+
+interpretd languages 
+=====================
+- weekly typed languages 
+ex: js, python , ruby 
+- bit slow in execution compared to compiled languages.
+
+
+compiler vs interprter
+=========================
+- Translation tools which converts HL ----> BL 
+
+
+
+
+WHAT IS OS ?
+===================
+
+USER 
+---------------------------------------
+applications (browser,notepad, VLC,office 365)
+--------------------------------------
+OS (system s/w , c, swift )
+----------------------------------
+Kernal (core part of os)
+---------------------------
+H/W (RAM, processor , storage)
+
+
+TYPES
+================
+Windows 
+Mac-OS
+Linux/Unix - Ubuntu , Linux mint 
+IBM OS (super comp , servers)
+
+
+2 WAYS TO INTERACT 
+=======================
+- GUI : Graphical User Interface..( with the help of UI)
+- CLI : Command Line Interface (with the help of commands)
+
+CLI :
+windows: command prompt , powershell , gitbash, terminal 
+macos : terminal 
+linux: bashshel 
+
+
+python --version : windows : command prompt 
+python3 --version : macos  : terminal 
+
+
+windows commands
+======================
+cd 						: change directory 
+dir 					: list or view the content of current path
+mkdir floderName 		: creates a new floder.
+cls						: clear screen
+rmdir floderName		: remove the floders
+notepad fileName.ext	: creates a new file with specified extension..
+type fileName			: view the content of a file.
+
+
+
+macos commands
+======================
+pwd								: present working directory
+cd 								: change directory 
+ls 								: list or view the content of current path
+mkdir flodername 				: creates a new floder.
+
+clear 							: clear the terminal screen
+rmdir 							: remove the floders
+touch fileName.ext > type info	: create a file 
+cat fileName.ext 				: to view the content.
+
+
+
+INSTALLATION
+=======================
+
+VSCODE  : https://code.visualstudio.com/download
+Anaconda Prompt : https://www.anaconda.com/download
+GIT : https://git-scm.com/downloads (required)
+	git --version
+
+Python: https://www.python.org/
+
+1. download the .exe file  and open installation wizard and follow the steps and install.
+2.  after installation  go to following path , by pressing Win+R 
+	copy the installation floder path : C:\Users\akraj\AppData\Local\Programs\Python\Python311
+3. open environment system variables and add the copied path under System Variables> Path 
+4. Save the changes 
+5. To verify : open cmd 
+	type:
+		python --version 
+		python -V
+		
+
+WORKSPACE SETUP
+==========================
+1. Create A floder : PythonTraining
+2. Create a two these-floders
+	- orgPython
+	- myPython
+		- myJupyterPractise
+		- myVSCodePractise
+		- myAssignments
+	- recordings 
+	
+		- try to save with TOPIC-Date
+			ex: workspacesetup-06-June-23
+			
+3. Go inside orgPython , open gitbash by right click , paste the following command.
+
+	git clone https://github.com/anil-k-rajamoni18/LearnPython.git
+	
+4. After cloning , copy the cloned floder from orgPython ---> myPython 
+
+5. FOR NEW CHANGES 
+	open gitbash in following path orgPython/LearnPython
+		- git status ---> nothing commit 
+		- git pull 
+		
+6. OPEN JUPYTER NOTEBOOK 
+	- always copy the path of PT/myPython 
+	- open Anaconda Prompt , and change the path 
+	- jupyter notebook ---> (default, port 8888) 
+	

@@ -1,0 +1,234 @@
+FUNDAMENTALS SESSION-1
+=============================
+
+--> Pre Req for programming languages.
+-> OS Fundamentals
+-> Types of OS's
+-> GUI vs CLI 
+-> Types of CLI tools for different OS's.
+	windows - command prompt , powershell
+	unix/linux: bash
+	mac-os: terminal 
+	
+-> popular CLI commands.
+-> python demo program.
+
+
+
+FUNDAMENTALS SESSION-2
+============================
+- different ways of executing python program
+	- command prompt
+	- shell/IDLE
+	- jupyter notebook
+	- vscode 
+
+- Installation of tools like git bash , anaconda , vscode , python.
+- Overview of IDLE and jupyter notebook
+- workspace setup.
+
+
+FUNDAMENTALS SESSION-3
+============================
+- jupyter overview 
+- different ways of python execution
+- programming lanaguages & python introduction 
+- translation tools 
+	compiler vs interpreter.
+
+
+PRE-REQ
+==============
+- Computer Fundamentals 
+- Know about OS(windows,MacOs)
+	##2ways 
+	1. GUI (graphical user interface) 
+			- using mouse and keyword
+	2. CLI (commandLine user interface)
+	
+			GUI (Graphical User Interface)
+	=================================
+			user
+	-----------------------------------
+			applications(notepad,msoffice)    
+	------------------------------------
+			KERNAL(core part of OS)
+	------------------------------------
+			OS (system s/w) 
+	----------------------------------
+			H/W(ram,processor,storage,)
+		  
+################################################################
+
+	
+			CLI (commandLine interface) 
+	====================
+			user
+	--------------------------
+			CLI tool (commandPrompt, Powershell, bashShell,terminal)
+	--------------------------
+			OS
+	--------------------------
+			H/W
+	-----------------------------
+	
+	
+### PYTHON INTERPRTER
+
+	python --version
+	python -V
+	
+### WINDOWS COMMANDS 
+			- cls 						--> clear the screen 
+			- cd (change directory ) 	--> change the path
+			- directorname:   			-> change to different directory
+			- dir 						--> to show the content in current path
+			
+			- mkdir name 				--> creating floder/directory
+			
+			- rmdir name                --->  
+			- notepad filename.ext 		--> to create a file .
+			
+			- type filename            --> shows content of the file.
+			- cd ..                    ---> change path to backward
+		
+###RUN THE PYTHON CODE
+
+		python fileName.py
+		python3 fileName.py (Mac-OS)
+		
+		
+### MAC COMMANDS ####
+
+ pwd 			-> present working directory 
+ ls -l      	--> list the content inside current path
+ cd         	---> changing the path 
+ touch fileName --> file creation
+ mkdir          ---> dir/folder creation
+ rmdir          ---> dir/folder delete
+ 
+ cat fileName   ---> show content of the FileName.
+ 
+ nano fileName ----> edit any file content
+ 
+ cd ..         -----> change path to one level up or backward
+ 
+ cd ~          -----> change path to home directory 
+ 
+ python3       ------> python command for MAC-OS
+ 
+### SHORTCUTS 
+==========================
+	WINDOW KEY + < or >   : split screen
+	WINDOWS KEY + V       : clipboard
+	WINDOWS+E             : File Explorer
+	WINDOWS+D 			  : Desktop
+	
+	Ctrl+Shift+N          : create a floder/directorname
+	shift+delete          : delete permanently.
+	WINDOWS+S             : search..
+	
+
+## INSTALLATION....################
+
+- python interpreter
+	https://www.python.org/
+	
+- git bash for windows
+	https://gitforwindows.org/
+	
+- miniconda 
+	https://docs.conda.io/en/latest/miniconda.html
+	
+  anaconda 
+	https://www.anaconda.com/products/distribution
+	
+- vscode IDE
+	https://code.visualstudio.com/download
+	
+	
+	
+#### WORKSPACE SETUP###############
+	- PythonTraining
+		- orgPython
+		- myPython
+			- myYupyterPractise
+			- myVSCodePractise
+			
+			
+git clone https://github.com/anil-k-rajamoni18/Py_March_23.git
+	
+1. Python Interperter Installing
+ Go to Python.org install latest version 
+   once downloaded just run/open the .exe following steps
+   
+2. By default python interpreter will install in following path
+		C:\Users\ACER\AppData\Local\Programs\Python
+	copy the required version path 
+	
+3. Open Environment system variables 
+	under System Variables 
+	add new entry of copied path 
+	4. open Command Prompt 
+		type: 
+		
+			windows-os
+			=================
+			python --version
+			python -V
+			
+			mac-os
+			===============
+			python3 --version
+			python3 -V
+			
+			
+			
+##DIFFERENT WAYS OF RUNNING PYTHON CODE 
+- 	command prompt 
+-   python shell/ IDLE 
+- 	VSCODE 
+- 	jupyter notebook
+
+
+
+
+
+### INTRODUCTION TO PROGRAMMING ###########
+====================================================
+
+=> Binary Lang (machine Language)
+	- 0's 1's
+	- Easy for machine , hard for developer
+	
+==> Assembly Language 
+	- mnemonics : use to write the instructions
+	- ex: addition of two number 
+			DECLARE RX1
+			READ RX1
+			MULT RX1= RX1 * 10
+			OUT RX1
+	- Assembler --> AL ----> Binay Code(0,1)
+	
+	- hard to understand , difficult to implement
+	
+==> High Level 
+	- writing the instructions using simple english words by following grammer/rules.
+	- ex: add two 2 numers
+		a = 10
+		b = 10
+		print(a + b)
+	
+	- HL(soure code) ---> Complier/Intepreter(translation)---> Binary Code(0,1)
+	HL(c,python,java) --compiler/interperter--> Machine Code(0,1)
+		
+		c , c++ , java 			-->  compilers
+		javascript , python , go --> intepreters
+		
+		==> COMPILER VS Interpreter.
+
+
+	
+	
+	
+	
