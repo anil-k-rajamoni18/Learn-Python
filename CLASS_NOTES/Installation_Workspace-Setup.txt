@@ -50,7 +50,7 @@
 	2. Go to PythonTraining/python-org
 		- Open GitBash by right click on empty screen
 		- Do the git clone 
-			- git clone https://github.com/anil-k-rajamoni18/PythonSessionFeb.git
+			- git clone  https://github.com/anil-k-rajamoni18/Learn-Python.git
 	3. TO PULL (get the new changes)
 		- Go to this path : PythonTraining/python-org and open Git Bash
 		- type : git status (it should be nothing to comit)
@@ -115,12 +115,12 @@ CLONING Repo
 
 3. GETTING NEW CHANGES from next time.
 	
-	a. open Terminal/Gitbash and change path to orgPython/PythonSessionFeb
+	a. open Terminal/Gitbash and change path to orgPython/Learn-Python
 	b. Do following commands 
 		git status --> nothing to commit 
 		
 		git pull
-	c. copy and paste 'PythonSessionFeb' the cloned floder from orgPython -->myPython 
+	c. copy and paste 'Learn-Python' the cloned floder from orgPython -->myPython 
 		
 note: 
 ===============
