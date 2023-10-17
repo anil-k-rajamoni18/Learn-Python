@@ -24,7 +24,11 @@ What is an API ?
 	- Types of API 
 	- Different Implementations
 	
+
+What is Type Hints or Type Annotations in Python?
 	
+ 
+
 
 
 
@@ -95,17 +99,72 @@ os.remove()
 os.rename() 
 os.getenv(path) : display env variables
 
-SYS [interacts with interpreter]
+sys [interacts with interpreter]
 ===================
 sys.version
 sys.winver
 sys.executable
 sys.getsizeof(obj)
 
+## array 
 
 
+## random
+
+## hashlib
+
+## regrex or re 
+
+## date time 
 
 
+## requests 
+WHAT IS AN API? (application programming interface) defines set of rules for communciation
+	
+	it will allow two different systems(platforms) to communicate 
+	
+	: NETFLIX 
+	one app (java) [web streaming]----------API's(XML,JSON)--------------- one(kotlin) [mobile streaming]
+	
+	java --- python
+	
+	javascript --> nodejs
+	
+	react js --.> java / nodejs / python
+	
+	TYPES Implementations:
+		- soap apis 
+		- REST APIS (rest state transfer apis]
+		- graphql apis 
+	
+	TYPES	
+	- PUBLIC APIS 
+	- PRIVATE APIS [access with key]
+	
+	METHODS:
+		CREATE: POST 
+		READ: GET 
+		UPDATE: PUT 
+		DELETE: DELETE 
+		
+	
+	# HOW TO COSUME?
+		- requests 
+		- httpclient 
+		
+
+	# HTTP 
+		- to send requests to the web servers 
+		ex: browser ----> HTTPS ----> servers
+			browser	   <---web pages--
+			
+		https://www.google.com/search?q=python+oops+concepts+examples&rlz=1C1YTUH_enIN1050IN1050&oq=python+oops+concepts+examples+&gs_lcrp=EgZjaHJvbWUyCggAEEUYFhgeGDkyCggBEAAYhgMYigUyCggCEAAYhgMYigUyCggDEAAYhgMYigUyCggEEAAYhgMYigXSAQk2OTQ1M2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+
+
+	## TERMINOLOGIES 
+		URL : https://reqres.in/api/users?page=2
+		DOMAIN: https://reqres.in
+		ENDPOINT: /api/users?page=2
 
 root : D:\2023\Python\Learn-Python\CLASS_PY_FILES
 flodername: OctoberSession
@@ -120,9 +179,6 @@ fullPath = currenPath + "\" + floderName
 		
 
 
-
-==> What is Type Hints or Type Annotations in Python?
- 
 
 
 
