@@ -1,0 +1,130 @@
+Hi, 
+ updated questions on functions, please check and solve by next session
+ link: https://github.com/anil-k-rajamoni18/Learn-Python/blob/main/CLASS_ASSIGNMENTS/ALL_QUESTIONS.ipynb
+ 
+ 1. create a branch with YourName 
+ 2. clone the url : https://github.com/anil-k-rajamoni18/Python-Discussion
+ 3. add your answers
+ 4. Push it into the remote branch 
+	git status
+	git add . 
+	git status
+	git commit -m "write commit message"
+	git push -u orgin branchName 
+	
+Thanks.
+
+
+
+WHAT IS JSON ?
+	- It's Data Types 
+	- It's Usage 
+	
+What is an API ?
+	- Types of API 
+	- Different Implementations
+	
+	
+
+
+
+git clone https://github.com/anil-k-rajamoni18/Learn-Python.git
+
+floder 
+	- __init__.py
+	- subfloder
+		- file
+		- file
+		- file
+	- subfloder
+		- file
+		- file
+		
+		
+		
+group of modules & sub-packages is A  package 
+
+module = python file  == group of functions == group of conditional/looping/sequentials statements
+
+##ASSIGNMENT				
+				
+1. Create a package Utils
+2. create a module with string-utils
+3. this module should include following operations
+	- display the string length 
+	- display string length without spaces 
+	- display all vowels 
+	- display whether string is palindrome or not 
+	- display whether string is panagram or not 
+	- display count of special characters: 
+		space , . ? ; : * % $ # @ ! * ( ) _ - 
+
+	- display reverse of a string.
+
+
+##############
+
+10/16/2023
+#############
+- What is module ?
+- Types of modules
+	- prebuild 
+	- user build/user defined
+- what is python package? and how to convert normal folder into python package
+- 4 ways of importing the modules 
+	1. import math 
+		math.gcd(10,20)
+	2. import math as mt 
+		mt.gcd(10,20)
+		
+	3. from math import gcd, sin, tan 
+		gcd(10,20)
+	4. from math import * 
+	
+		
+OS [interacts with operating system]
+==============
+os.getcwd() : display current path 
+os.chdir() : to change the path 
+os.listdir() : display content or files of the path/dir
+os.path.join(path1,path2)
+os.mkdir() : create new dir/floder
+os.rmdir() : delete dir/floder
+open(filename, mode) : creates a file 
+os.remove() 
+os.rename() 
+os.getenv(path) : display env variables
+
+SYS [interacts with interpreter]
+===================
+sys.version
+sys.winver
+sys.executable
+sys.getsizeof(obj)
+
+
+
+
+
+
+root : D:\2023\Python\Learn-Python\CLASS_PY_FILES
+flodername: OctoberSession
+
+full path : D:\2023\Python\Learn-Python\CLASS_PY_FILES\OctoberSession
+
+floderName = "TejaStore"
+currenPath = "D:\2023\Python\Learn-Python\CLASS_PY_FILES"
+fullPath = currenPath + "\" + floderName
+
+		D:\2023\Python\Learn-Python\CLASS_PY_FILES\TejaStore
+		
+
+
+
+==> What is Type Hints or Type Annotations in Python?
+ 
+
+
+
+
+
