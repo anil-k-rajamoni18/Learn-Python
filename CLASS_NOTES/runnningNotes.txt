@@ -3,7 +3,8 @@ Hi,
  link: https://github.com/anil-k-rajamoni18/Learn-Python/blob/main/CLASS_ASSIGNMENTS/ALL_QUESTIONS.ipynb
  
  1. create a branch with YourName 
- 2. clone the url : https://github.com/anil-k-rajamoni18/Python-Discussion
+ 2. clone the url : 
+	git clone -b branchName --single-branch https://github.com/anil-k-rajamoni18/Python-Discussion
  3. add your answers
  4. Push it into the remote branch 
 	git status
@@ -34,7 +35,8 @@ What is Type Hints or Type Annotations in Python?
 
 git clone https://github.com/anil-k-rajamoni18/Learn-Python.git
 
-floder 
+
+==> floder(python package) 
 	- __init__.py
 	- subfloder
 		- file
@@ -166,18 +168,21 @@ WHAT IS AN API? (application programming interface) defines set of rules for com
 		DOMAIN: https://reqres.in
 		ENDPOINT: /api/users?page=2
 
-root : D:\2023\Python\Learn-Python\CLASS_PY_FILES
-flodername: OctoberSession
 
-full path : D:\2023\Python\Learn-Python\CLASS_PY_FILES\OctoberSession
 
-floderName = "TejaStore"
-currenPath = "D:\2023\Python\Learn-Python\CLASS_PY_FILES"
-fullPath = currenPath + "\" + floderName
+###########################
 
-		D:\2023\Python\Learn-Python\CLASS_PY_FILES\TejaStore
-		
+quizs
+----------------
+1. https://pynative.com/basic-python-quiz-for-beginners/ 
 
+2. https://pynative.com/python-operators-and-expression-quiz/
+
+3. https://pynative.com/python-if-else-and-for-loop-quiz/
+
+4. https://pynative.com/python-functions-quiz/
+
+5. https://pynative.com/python-random-data-generation-quiz/
 
 
 
