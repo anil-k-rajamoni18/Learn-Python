@@ -36,26 +36,10 @@ What is Type Hints or Type Annotations in Python?
 git clone https://github.com/anil-k-rajamoni18/Learn-Python.git
 
 
-==> floder(python package) 
-	- __init__.py
-	- subfloder
-		- file
-		- file
-		- file
-	- subfloder
-		- file
-		- file
-		
-		
-		
-group of modules & sub-packages is A  package 
-
-module = python file  == group of functions == group of conditional/looping/sequentials statements
-
-##ASSIGNMENT				
+##ASSIGNMENT ###			
 				
 1. Create a package Utils
-2. create a module with string-utils
+2. create a module with stringUtils
 3. this module should include following operations
 	- display the string length 
 	- display string length without spaces 
@@ -87,7 +71,26 @@ module = python file  == group of functions == group of conditional/looping/sequ
 		gcd(10,20)
 	4. from math import * 
 	
+	
+
+==> floder(python package) 
+	- __init__.py
+	- subfloder
+		- file
+		- file
+		- file
+	- subfloder
+		- file
+		- file
 		
+		
+		
+==> group of modules & sub-packages is A  package 
+
+=> module = python file  == group of functions == group of conditional/looping/sequentials statements
+
+	
+#########################################	
 OS [interacts with operating system]
 ==============
 os.getcwd() : display current path 
@@ -119,6 +122,8 @@ sys.getsizeof(obj)
 
 ## date time 
 
+## requests 
+
 
 ## requests 
 WHAT IS AN API? (application programming interface) defines set of rules for communciation
@@ -133,6 +138,8 @@ WHAT IS AN API? (application programming interface) defines set of rules for com
 	javascript --> nodejs
 	
 	react js --.> java / nodejs / python
+	
+	REACT.JS/AJS/ (FE) ---apis----> B.E(java/python/ruby/rust)  ---APIS----> DB(MYSQL, MONGODB, Elastic Search)
 	
 	TYPES Implementations:
 		- soap apis 
@@ -155,9 +162,9 @@ WHAT IS AN API? (application programming interface) defines set of rules for com
 		- httpclient 
 		
 
-	# HTTP 
+	# HTTP /HTTPS 
 		- to send requests to the web servers 
-		ex: browser ----> HTTPS ----> servers
+		ex: browser ----> HTTPS ----> web servers
 			browser	   <---web pages--
 			
 		https://www.google.com/search?q=python+oops+concepts+examples&rlz=1C1YTUH_enIN1050IN1050&oq=python+oops+concepts+examples+&gs_lcrp=EgZjaHJvbWUyCggAEEUYFhgeGDkyCggBEAAYhgMYigUyCggCEAAYhgMYigUyCggDEAAYhgMYigUyCggEEAAYhgMYigXSAQk2OTQ1M2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8
@@ -168,6 +175,8 @@ WHAT IS AN API? (application programming interface) defines set of rules for com
 		DOMAIN: https://reqres.in
 		ENDPOINT: /api/users?page=2
 
+	user/comp/mobile -----> request ---> API(communication/medium) -----> server/backend 
+			<-------------response<----------
 
 
 ###########################
@@ -189,3 +198,38 @@ quizs
 
 
 
+##### #############################
+
+- Create a module with a name: apiOperations
+- perform following operations 
+	- GET 
+	- POST 
+	- DELETE 
+	- PUT 
+- create one method for one operations 
+	import requests
+	def getUserDetails():
+		apiUrl = 'https://reqres.in/api/users?page=2'
+		response = requests.request("GET", apiUrl)
+		print(response.status_code)
+		if response.status_code == 200 or response.status_code == 201:
+			print(response.json())
+		
+- reference: https://reqres.in/
+
+
+
+JAVA 
+---------------
+try
+catch
+finally
+throw
+throws
+
+PYTHON
+--------------
+try 
+expect 
+finally 
+raise 
