@@ -47,7 +47,7 @@
 			- create two sub-floders
 				->  myPython
 				->  orgPython
-	2. Go to PythonTraining/python-org
+	2. Go to PythonTraining/orgPython
 		- Open GitBash by right click on empty screen
 		- Do the git clone 
 			- git clone  https://github.com/anil-k-rajamoni18/Learn-Python.git

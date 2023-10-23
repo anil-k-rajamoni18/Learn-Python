@@ -1,0 +1,5 @@
+java is compiled & interpreted
+java is secure & robuststreams api is introduced in java 8
+records are very easy compared class
+java lambda is very easy compared to other lang
+current version of java is 21

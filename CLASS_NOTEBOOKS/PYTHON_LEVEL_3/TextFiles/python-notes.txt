@@ -1,0 +1,2 @@
+java is strongly typed lang
+python is weekly typed lang

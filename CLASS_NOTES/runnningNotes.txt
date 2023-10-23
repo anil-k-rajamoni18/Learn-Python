@@ -207,6 +207,7 @@ quizs
 	- DELETE 
 	- PUT 
 - create one method for one operations 
+
 	import requests
 	def getUserDetails():
 		apiUrl = 'https://reqres.in/api/users?page=2'
@@ -216,6 +217,65 @@ quizs
 			print(response.json())
 		
 - reference: https://reqres.in/
+			https://jsonplaceholder.typicode.com/
+			https://rapidapi.com/hub
+
+
+# EXCEPTIONAL HANDLING 
+- WHAT IS EXCEPTION 
+- WHAT IS ERROR 
+- Importance of exception handling 
+- keywords
+	try 
+	except
+	finaly 
+	raise 
+	else 
+	
+BASE CLASS : Exception (will handle all exceptions)
+CHILD CLASS: TypeError, ZeroDivisionError,ValueError
+- Examples
+	try:
+		pass
+		
+	except:
+		pass
+	
+	try:
+		pass
+	except:
+		pass
+	except:
+		pass
+		
+	try:
+		pass
+		
+	except(ZDE, VE, TE,AE) as e:
+		pass
+		
+	try:
+		pass
+	
+	except:
+		pass
+	finally:
+		pass
+		
+	try:
+		pass
+	except:
+		pass
+	else:
+		pass 
+		
+		
+		
+	try:
+		pass
+	except:
+		raise 
+		
 
 
 
@@ -233,3 +293,67 @@ try
 expect 
 finally 
 raise 
+
+
+#####################
+
+
+1. Write a Python program to handle a ZeroDivisionError exception when dividing a number by zero.
+
+	exception ZeroDivisionError:
+
+	Raised when the second argument of a division or modulo operation is zero. 
+	The associated value is a string indicating the type of the operands and the operation.
+
+
+2. Write a Python program that prompts the user to input an integer and raises a ValueError exception if the input is not a valid integer.
+
+	exception ValueError:
+
+	Raised when an operation or function receives an argument that has the right type but an inappropriate value, and the situation is not described by a more precise exception such as IndexError.
+
+
+3. Write a Python program that opens a file and handles a FileNotFoundError exception if the file does not exist.
+
+	exception FileNotFoundError:
+	Raised when a file or directory is requested but doesn't exist. Corresponds to errno ENOENT.
+
+
+4. Write a Python program that prompts the user to input two numbers and raises a TypeError exception if the inputs are not numerical.
+
+	exception TypeError:
+	Raised when an operation or function is applied to an object of inappropriate type. The associated value is a string giving details about the type mismatch.
+
+
+5. Write a Python program that opens a file and handles a PermissionError exception if there is a permission issue.
+
+	exception PermissionError:
+
+	Raised when trying to run an operation without the adequate access rights - for example filesystem permissions. Corresponds to errno EACCES, EPERM, and ENOTCAPABLE.
+
+
+6. Write a Python program that executes an operation on a list and handles an IndexError exception if the index is out of range.
+
+	exception IndexError:
+
+	Raised when a sequence subscript is out of range. (Slice indices are silently truncated to fall in the allowed range; if an index is not an integer, TypeError is raised.)
+
+
+7. Write a Python program that prompts the user to input a number and handles a KeyboardInterrupt exception if the user cancels the input.
+
+	exception KeyboardInterrupt:
+
+	Raised when the user hits the interrupt key (normally Control-C or Delete). During execution, a check for interrupts is made regularly. The exception inherits from BaseException so as to not be accidentally caught by code that catches Exception and thus prevent the interpreter from exiting.
+
+
+8. Write a Python program that opens a file and handles a UnicodeDecodeError exception if there is an encoding issue.
+
+	exception UnicodeDecodeError:
+
+	Raised when a Unicode-related error occurs during decoding. It is a subclass of UnicodeError.
+
+9. Write a Python program that executes a list operation and handles an AttributeError exception if the attribute does not exist.
+
+	exception AttributeError:
+
+	Raised when an attribute reference (see Attribute references) or assignment fails. (When an object does not support attribute references or attribute assignments at all, TypeError is raised.)

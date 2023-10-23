@@ -1,0 +1,10 @@
+The company’s focus on wheeled AMRs (autonomous mobile robots) dates back to its 2012 purchase of Kiva Systems, whose platforms have formed the foundation for the whole of Amazon Robotics. 
+
+A system needs to demonstrate an increase in productivity in order for Amazon to integrate it into its growing robotics ecosystem. 
+It’s less innovation for innovation’s sake, and more scoping out any possible advantage that will get goods to customers in less time. Including drones.
+
+
+The biggest talking point around the form factor is the fact that humans build workspaces for other humans. 
+That includes shelving heights, terrain, aisle width and the staircase, the bane of the ARM’s existence. 
+From this standpoint a humanoid robot suddenly makes a lot more sense. The reality of things is that most companies operate in brownfield sites. 
+That is to say their warehouses and factories generally aren’t built with specific automation solutions in mind. Humanoid robots slot nicely into a brownfield site.
