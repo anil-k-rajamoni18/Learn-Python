@@ -207,7 +207,6 @@ quizs
 	- DELETE 
 	- PUT 
 - create one method for one operations 
-
 	import requests
 	def getUserDetails():
 		apiUrl = 'https://reqres.in/api/users?page=2'
@@ -216,6 +215,7 @@ quizs
 		if response.status_code == 200 or response.status_code == 201:
 			print(response.json())
 		
+	
 - reference: https://reqres.in/
 			https://jsonplaceholder.typicode.com/
 			https://rapidapi.com/hub
@@ -357,3 +357,32 @@ raise
 	exception AttributeError:
 
 	Raised when an attribute reference (see Attribute references) or assignment fails. (When an object does not support attribute references or attribute assignments at all, TypeError is raised.)
+
+
+
+### FILE HANDLING ############
+File : primary unit for storage 
+Floder/Dirs
+	- subfloder/sub-dir	
+		- files (.txt,.py, .java, .cpp, .pdf , .doc, .json, .env)
+		
+
+### attribute vs method ########
+module: justdoit 
+	username = 'kumar'
+	password = 'kumar@1234'
+	def hi()-> str:
+		return "hi"
+	def greet(name: str) -> str:
+		return f'hello {name}'
+		
+import justdoit
+print(justdoit.hi())
+print(justdoit.greet('bhanu'))
+
+
+
+
+		
+	
+		
