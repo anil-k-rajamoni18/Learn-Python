@@ -361,10 +361,53 @@ raise
 
 
 ### FILE HANDLING ############
-File : primary unit for storage 
-Floder/Dirs
+-> File : primary unit for storage 
+-> Floder/Dirs
 	- subfloder/sub-dir	
 		- files (.txt,.py, .java, .cpp, .pdf , .doc, .json, .env)
+	
+
+- INTRODUCTION TO FILES 
+- RECAP of os module 
+- syntax: open() method 
+- different modes 
+- TWO WAYS 
+	1. f = open(fileName, mode) # must close the file after operation
+	2. with open(fileName, mode) as f: # closed automatically 
+		body 
+- problem
+	- counting uppercase
+	- counting spaces 
+	- counting vowels
+	
+- OPERATION
+	- reading 
+		mode = 'r' # file must be exits while reading , otherwise FileNotExistsError
+	- writing
+		mode = 'w'
+		mode = 'x'
+		mode = 'a'
+-> File Object attributes
+-> file object methods 
+	- close()
+	- read()
+	- read(n)
+	- readline()
+	- readlines()
+	- write()
+	- writelines()
+	- tell()
+	- seek()
+	
+## tell() vs seek() 
+
+Handson Excerise
+=====================================
+1.make a call to the endpoint: https://reqres.in/api/users?page=2
+2.store the response
+3.apply the json() store it in a variable
+4.create a file with 
+	name: users.txt and store all usernames (last_name, first_name)
 		
 
 ### attribute vs method ########
@@ -382,7 +425,208 @@ print(justdoit.greet('bhanu'))
 
 
 
-
-		
+## PRE-REQ ###
+-> WHAT IS FUNCTIONS 
+-> Importance of functions 
+- Advantage of functions 
+- syntax:
+	def functionName(param1, param2, ... paramn):
+		pass
+- Types 
+	- Pre-Build functions 
+		len(), sum() , max() , min() 
+	- User-Defined Functions 
 	
+- Types of args 
+	- * args  # tuple
+	- **kwargs  # dictionary
+	- required postional args 
+	- default args 
+- Local variables vs Global Variables
+	- global 
+	- nonlocal 
+	
+- Returning 
+	- return values 
+	- returning more than one value
+	- returning function 
+- Pass by values & pass by references
+
+- Function Closure 
+
+- Nested Functions 
+
+- Recursive Functions
+
+
+
+### BASICS OOPS ###
+1. what is class  # it's a blueprint for object specification
+2. what is object # it's realtime entity which has state (attributes) & behavior(methods)
+3.what is state & behaviour?
+4.what is function() vs method() 
+	- function is not bounded with any class or object 
+	- method is always bounded with class or object 
+	ex: functions 
+		len() , list(), map() , filter() , reduce() 
+	ex: methods 
+	response = request.get("url")
+	response.json()
+	response.text
+	response.status_code
+	
+5.what is constructor in a class?
+	- It will construct the object 
+	- It is automatically when object is created 
+	- name: 
+		def __init__(self,param):
+			pass
+	
+
+1A)A class encapsulates data (attributes) and functions (methods) that operate on that data.
+For example, 
+ you could create a class called "Car" that defines what attributes (color, make, model) and methods (start, stop, honk) a car object will have.
+
+2A)Objects have state (the values of their attributes) and behavior (the methods they can perform).
+Using the "Car" class example, an object would be a specific car, such as a red Ford Mustang
+
+3A)In the context of objects and classes, "state" refers to the attributes or properties of an object. For a "Car" object, the state might include attributes like color, make, and model.
+"Behavior" refers to the methods or functions that an object can perform. These methods define what actions or operations the object can execute. For a "Car" object, behaviors could include starting the engine, stopping, or honking the horn.
+
+4A)In the context of objects and classes, "state" refers to the attributes or properties of an object. For a "Car" object, the state might include attributes like color, make, and model.
+"Behavior" refers to the methods or functions that an object can perform. These methods define what actions or operations the object can execute. For a "Car" object, behaviors could include starting the engine, stopping, or honking the horn.
+
+5A)In Python, a constructor is a special method used to initialize an object when it is created. The constructor method is named __init__. It is automatically called when you create a new object from a class.
+
+
+
+6. what is self parameter in constructor?
+	A: 
+	- self is reference variable
+	- it will always points to the current object/instance 
+	- self should be the first param in constructor & in instance method 
+	- self can be used to access object attributes inside a class 
+
+	
+7. what is difference b/w object attributes & class attributes 
+	A:
+	- object attributes : variables bounded to object / instance variables
+	- class attributes: variables bound to class  / class level variables
+	
+8. How many access specificers we have in OOPS?
+	- we have 3 access specifiers 
+		- public 
+		- protected
+		- private 
 		
+9. Can a object be created with empty class definition?
+	- yes 
+	
+10.what are different types of methods we have in a class?
+	A:
+		- instance methods 
+		- static methods 
+		- class methods 
+		- abstract methods 
+		
+ 
+ 
+11.What is inhertiance and how to declare & What are the limitations of inheritance?
+12.What is multiple inheritance?
+13.What is the function of a super keyword? 
+14.What is the difference between overloading and overriding?
+15.How is encapsulation different from data abstraction?
+16.Is it possible to call the base class method without creating an instance?
+17. What are the limitations of OOPs?
+
+
+OOPS TERMINOLOGIES
+--------------------------
+- variables -> attributes , member variables
+- functions ->  methods, member functions 
+- object = instance of a class = realworld entity 
+- class = blueprint = object specification.
+
+- state: defines data (variables)
+- behavior: defines behavior/functionality (methods)
+
+
+
+## Programming Paradigms ###
+- Imperative Programing
+- Declarative Programing
+- Functional programming
+- Object Oriented Programing
+
+
+## Excerise ##
+
+- Create a class with name: Calculator 
+- define instance methods for all operations 
+	addition
+	subtraction
+	division
+	modulus
+	power
+	multiplication
+	
+
+oops quiz: https://realpython.com/quizzes/pybasics-oop/
+quiz-2: https://realpython.com/quizzes/python3-object-oriented-programming/
+
+
+
+
+Types of Constructors in Python
+Parameterized Constructor
+Non-Parameterized Constructor
+Default Constructor
+1. Parameterized Constructor in Python
+
+class Family:  
+    # Constructor - parameterized  
+    members=5
+    def __init__(self, count):  
+        print("This is parametrized constructor")  
+        self.members = count
+    def show(self):  
+        print("No. of members is", self.members)  
+        
+object = Family(10)  
+object.show() 
+
+
+
+class Fruits:
+    favourite = "Apple"
+
+    # non-parameterized constructor
+    def __init__(self):
+        self.favourite = "Orange"
+
+    # a method
+    def show(self):
+        print(self.favourite)
+
+
+# creating an object of the class
+obj = Fruits()
+
+# calling the instance method using the object obj
+obj.show()
+
+
+class Assignments:
+    check= "not done"
+    # a method
+    def is_done(self):
+        print(self.check)
+
+# creating an object of the class
+obj = Assignments()
+
+# calling the instance method using the object obj
+obj.is_done()
+
+
+
