@@ -537,7 +537,7 @@ Using the "Car" class example, an object would be a specific car, such as a red 
 14.What is the difference between overloading and overriding?
 15.How is encapsulation different from data abstraction?
 16.Is it possible to call the base class method without creating an instance?
-17. What are the limitations of OOPs?
+17.What are the limitations of OOPs?
 
 
 OOPS TERMINOLOGIES
@@ -577,56 +577,48 @@ quiz-2: https://realpython.com/quizzes/python3-object-oriented-programming/
 
 
 
-Types of Constructors in Python
-Parameterized Constructor
-Non-Parameterized Constructor
-Default Constructor
-1. Parameterized Constructor in Python
+## OOPS ##
 
-class Family:  
-    # Constructor - parameterized  
-    members=5
-    def __init__(self, count):  
-        print("This is parametrized constructor")  
-        self.members = count
-    def show(self):  
-        print("No. of members is", self.members)  
-        
-object = Family(10)  
-object.show() 
+- INTRODUCTION
+- Functional Programing vs object-oriented-programming
+- Pros & Cons 
+- OOP's terminologies
+	- attributes
+	- methods
+	- state 
+	- behaviour 
 
+- OOPS pillars 
+	- OBJECT 
+	- CLASS 
+	- ENCAPSULATION
+	- ABSTRACTION
+	- PLOYMORPHISM 
+	
+- Object over-view
+- Class over-view
+- Different of declaring class [3ways]
+- special method --> constructor 
+	def __init__(self, params):
+		body 
 
+- self keyword 
 
-class Fruits:
-    favourite = "Apple"
+- constructor overloading : multiple __init__() methods 
+		- incase of multiple __init__() methods, always it will consider last declared signature
+		
+- Types Variables:
+	- instance/object variables [will create one copy per one object]
+	- class/static variables [will create one copy for all objects]
 
-    # non-parameterized constructor
-    def __init__(self):
-        self.favourite = "Orange"
-
-    # a method
-    def show(self):
-        print(self.favourite)
-
-
-# creating an object of the class
-obj = Fruits()
-
-# calling the instance method using the object obj
-obj.show()
+	
 
 
-class Assignments:
-    check= "not done"
-    # a method
-    def is_done(self):
-        print(self.check)
 
-# creating an object of the class
-obj = Assignments()
+Parent/Super/Base 
+Child/Dervied/SubClass
 
-# calling the instance method using the object obj
-obj.is_done()
+				
 
 
 
