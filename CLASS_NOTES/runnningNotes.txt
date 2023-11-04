@@ -16,6 +16,12 @@ Hi,
 Thanks.
 
 
+####################
+1. Create one pycharam project with name: pythonassign
+2. create python dirs for each topic questions
+3. add answers 
+4. push 
+###################
 
 WHAT IS JSON ?
 	- It's Data Types 
@@ -620,5 +626,36 @@ Child/Dervied/SubClass
 
 				
 
+## 
 
 
+DATABASES
+	- MYSQL  
+	- MONGODB
+	
+
+
+
+1.CLI (command Line interface)
+	- python shell
+	- CLI commands 
+2.IDLE 
+
+3.IDE (intergated development env)
+	- code syntax 
+	- code higlighting 
+	- debugging
+	- run 
+	- test cases 
+	
+	1. VSCODE 
+	2. Pycharm
+	3. Atom 
+	4. Sublime 
+	
+4. Notebooks 
+	- jupyter notebook
+	- jupyter lab
+	- google colab 
+	
+	

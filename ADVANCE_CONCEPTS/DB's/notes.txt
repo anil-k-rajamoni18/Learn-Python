@@ -1,0 +1,76 @@
+### MYSQL #####
+======================
+
+link: https://dev.mysql.com/downloads/installer/
+
+commands:
+	mysql --version
+    mysql -u username -p;
+    show databases;
+    show tables;
+    use dbname;
+    desc tablename;
+
+
+
+- Types of Database
+	Central
+	De-central
+	cloud
+	OOP
+	SQL
+	NOSQL
+	
+- Importance of Database
+	storage purpose 
+	
+- SQL
+	-A lang used to query Relation DB's 
+	
+- NOSQL
+		-A lang used to query Non Relation DB's 
+	
+- MYSQL vs Mongo
+	SQL DATABASE vs NOSQL DATABASE 
+------------------------------
+
+
+MONGODB
+========================
+
+url : https://www.mongodb.com/try/download/community
+shell url: https://www.mongodb.com/try/download/shell
+
+command:
+	mongod --version
+	
+	
+
+
+MYSQL
+================================
+
+CREATE DATABASE food;
+
+	
+CREATE TABLE food_items (
+	foodId integer PRIMARY KEY,
+    foodName varchar(20) NOT NULL,
+    foodPrice double NOT NULL
+);
+
+
+	
+			
+INSERT INTO food_items 
+	values(102,'Steak Burrito' , 30),
+	(103,'Whopper',50.2),
+	(104,'Big King',67),
+	(105,'Snickers Pie',45);
+
+
+SELECT * FROM food_items;
+
+
+
+

@@ -1,0 +1,224 @@
+
+DATA TYPES
+------------------------------
+String DataTypes
+Numeric Data Types
+Date and Time Data Types
+
+
+COMMANDS
+---------------------------
+
+create database augustdb;
+
+CREATE TABLE employee (
+    empid int(10) PRIMARY KEY,
+    emp_name varchar(20) NOT NULL,
+    location varchar(10)
+);
+
+CREATE TABLE dept(
+	deptid int PRIMARY KEY,
+	dept_name varchar(20) NOT NULL,
+	dept_count int NOT NULL
+);
+
+
+
+INSERT INTO employee values(101,'kumar','chennai');
+
+INSERT INTO dept values(201,'IT',100);
+
+SELECT * FROM employee;
+
+
+emp_id  --> snake case
+studentName --> camelcase.
+
+CREATE TABLE demotable AS
+SELECT dept_name, dept_count
+FROM dept;
+
+
+
+06-AUGUST_2023
+======================
+
+CREATE DATABASE databasename
+CREATE DATABASE IF NOT EXISTS databaseName;
+
+
+ALTER TABLE employee
+   ADD dept_name varchar(20) ;
+   
+ALTER TABLE employee
+  DROP COLUMN dept_name;
+  
+
+ALTER TABLE employee
+	ADD dob varchar(20);
+
+ALTER TABLE employee
+    MODIFY COLUMN dob date;
+
+
+
+NOT NULL 
+===================
+
+
+CREATE TABLE persons (
+    id int NOT NULL,
+    last_name varchar(255) NOT NULL,
+    first_name varchar(255) NOT NULL,
+    age int
+);
+
+INSERT into persons VALUES(101,'groot','avenger',2);
+
+INSERT into persons(id,first_name,age) VALUES(101,'tony',40);
+
+INSERT into persons(id,first_name,last_name) VALUES(101,'tony','shark');
+
+
+ALTER TABLE persons
+	MODIFY age int NOT NULL;
+	
+	
+UNIQUE
+======================
+
+CREATE TABLE persons (
+    id int NOT NULL,
+    lastname varchar(255),
+    firstname varchar(255) NOT NULL,
+    age int DEFAULT 0,
+    UNIQUE (id,firstname)
+);
+
+
+INSERT into persons VALUES(101,'groot','avenger',2);
+INSERT into persons(id,lastname,firstname) VALUES(101,'rocket','space avenger');
+
+INSERT into persons VALUES(101,'ram','kumar',27);
+
+
+ALTER TABLE Persons
+	ADD CONSTRAINT UC_Person UNIQUE (id);
+	
+	
+
+PRIMARY KEY
+====================
+
+CREATE TABLE order_t (
+    id int(10),
+    name varchar(255) NOT NULL,
+    price double NOT NULL CHECK (price>=10),
+    quantity int(10) DEFAULT 0,
+	cust_name varchar(20) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+INSERT INTO order_t values(1,'desktop',100.5,20,'kumar');
+INSERT INTO order_t values(3,'samsung',8.5,30,'Alex');
+
+INSERT INTO order_t(id,name,price,cust_name) VALUES(4,'iphone',1600.26,'Avan');
+
+ALTER TABLE order_t
+	ADD order_date date DEFAULT CURRENT_DATE();
+
+
+INSERT INTO order_t values(5,'macbook',2000.5,5,'hemanth','2023-08-05');
+
+
+
+###########################################
+LOADING Data  : 18-08-2023
+##############################################
+
+
+**method-1: using text file**
+======================================
+
+1. mysql -u root -p
+2. set global local_infile=true
+3. again login with following cmd.
+	mysql --local-infile=1 -u root -p
+
+4. To load text file data 
+LOAD DATA LOCAL INFILE 'D:\\DB\\MySQL-Tutorial\\text_files\\pets.txt' INTO TABLE pet;
+
+
+**methods-2: using script file**
+============================================
+- we will add sql commands to be performed sequentially in script file.
+- save it with fileName.sql extension
+- run the following command and provide password
+	mysql -u root -p < students.sql
+
+- **NOTE**: file should be same path where we are running the command otherwise provide full file path.
+
+
+========================
+exporting data from database 
+---------------------------------
+
+1. create a empty .sql file 
+2. run the following command 
+
+mysqldump -u root -p coursedb > studentDump.sql
+
+- following command will load entire data of course into studentDump.sql
+
+====================================================
+
+
+CREATE TABLE customer_t(
+	cust_id int PRIMARY KEY ,
+	firstName varchar(20) NOT NULL,
+	lastName varchar(20),
+	city varchar(20) NOT NULL,
+	country varchar(20),
+	age int
+)
+
+1. INSERT INTO customer_t (cust_id,firstName,city) VALUES(1,'sravani','NY');
+
+2. INSERT INTO customer_t VALUES(1,'kumar','rajamoni','IND',45);
+
+
+CREATE TABLE IF NOT EXISTS students(
+	studentId int AUTO_INCREMENT PRIMARY KEY,
+	studentName varchar(20) NOT NULL,
+	enrolledCourse varchar(20) NOT NULL,
+	joinedDate date NOT NULL,
+	phoneNumber INTEGER,
+	studentAddress VARCHAR(20)
+);
+
+
+###### 26-08-2023 #######
+
+
+Create : INSERT 
+Read : SELECT 
+Update: UPDATE 
+Delete : DELETE 
+
+(CRUD) operation
+
+
+select * from cars where horsepower = (select MAX(horsepower) from cars); 
+
+1. Find the car having second highest horsepower?
+
+
+UPDATE 
+DELETE 
+HAVE 
+GROUP BY 
+
+SQL : MySQL : Tables
+NO SQL : MongoDB : JSON 
