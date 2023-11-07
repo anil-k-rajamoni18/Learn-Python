@@ -1,5 +1,5 @@
 ***************************************************
-INSTALLATION 
+		INSTALLATION 
 ***********************************************
 1. Installation floder 
 	C:\Program Files\MySQL
@@ -16,8 +16,13 @@ shell commands;
 ***********************************************
 
 show databases --> list all dbs;
+	| information_schema |
+	| mysql |
+	| performance_schema |
+	| sys |
 use database-name --> change or switch the db 
 show tables --> list all tables 
+describe tableName 
 
 ***********************************************
 DATA TYPES
@@ -285,3 +290,52 @@ CREATE TABLE IF NOT EXISTS students(
 );
 
 
+----------------------------------
+
+
+```sql
+
+```
+
+
+CREATE TABLE food_items_t (
+    food_id int PRIMARY KEY,
+    food_name VARCHAR(50) NOT NULL,
+    price DECIMAL,
+	quantity INT NOT NULL
+);
+
+INSERT INTO food_items_t VALUES(4,'veg briyani',220,5, 'Y');
+INSERT INTO food_items_t (food_id,food_name,price,quantity) VALUES (5, 'Snickers Pie', 450,2,'N');
+INSERT INTO food_items_t (food_id,food_name,quantity) VALUES (6,'Egg Biryani',4);
+
+INSERT INTO food_items_t (food_id,food_name,price) VALUES (7,'Egg Fried Rice',170);
+
+INSERT INTO food_items_t VALUES (8,'chicken soup',250,5);
+
+
+
+CREATE TABLE person (
+        person_id int PRIMARY KEY,
+        last_name varchar(255),
+        first_name varchar(255) NOT NULL,
+        address varchar(255),
+        city varchar(255)
+    );
+	
+	
+	
+	CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255) UNIQUE,
+    Age int,
+    UNIQUE (ID)
+);
+
+
+CREATE TABLE Orders (
+    ID int NOT NULL,
+    OrderNumber int NOT NULL,
+    OrderDate date 
+);
