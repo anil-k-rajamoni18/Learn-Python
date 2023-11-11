@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS CourseDB;
+CREATE DATABASE IF NOT EXISTS studentdb;
 
 SELECT 'CREATING DATABASE courseDB' as 'INFO';
 
-use CourseDB;
+use studentdb;
 
 SELECT 'CREATING TABLE students' as 'INFO';
 
