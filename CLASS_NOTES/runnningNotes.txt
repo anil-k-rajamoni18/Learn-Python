@@ -905,3 +905,44 @@ HAVING
     status = orderstatus AND 
     total > 1500;
 END
+
+
+##############
+
+what is ORM ?
+different ORM's with python?
+what is sqlalchemy?
+
+
+#########################
+
+- installation connector or driver or library
+	pip install mysql-connector-python
+
+- try importing 
+	import mysql.connector 
+	
+1. Create Connection objection
+	connection = mysql.connector.connect(
+    host = "localhost",
+    user = "mayUser",
+    password = "MayDB@18",
+    auth_plugin='mysql_native_password'
+)
+
+2. create cursor object from connection object
+	cursor = connection.cursor() 
+	
+3. Perform the operations using cursor object methods 
+	cursor.execute("SQL QUERY")
+	cursor.executemany() 
+	
+4. Fetch the results stored in resultSet , using cursor object methods
+	cursor.fecth()
+	cursor.fetchOne()
+	cursor.fetchall() 
+
+5. close 
+	cursor.close()
+	connection.close() 
+	

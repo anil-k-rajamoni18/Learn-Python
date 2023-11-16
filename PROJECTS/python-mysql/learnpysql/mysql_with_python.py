@@ -1,5 +1,7 @@
+# importing
 import mysql.connector
 
+# connection
 connection = None
 try:
     connection = mysql.connector.connect(
@@ -20,6 +22,7 @@ print(connection.user)
 print(connection.is_connected())
 print(connection.get_server_info())
 print(connection.get_server_version())
+print(connection.cursor)
 '''
 
 
@@ -33,14 +36,14 @@ def create_database():
 
 def show_databases():
     cursor = connection.cursor()
-    query = '''show databases'''
+    query = '''show database'''
     cursor.execute(query)
     print(cursor.fetchall())
     cursor.close()
 
 
 def show_tables():
-    cursor = connection.cursor()
+    cursor = connection.cursor()  # cursor object creation # explicit cursor
     query = '''show tables'''
     cursor.execute(query)
     print(cursor.fetchall())
@@ -100,11 +103,47 @@ def insert_data_multiple(values):
     query = '''
     INSERT INTO product_t values(%s,%s,%s,%s)
     '''
-    cursor.executemany(query, values) # list of record/rows
+    cursor.executemany(query, values)  # list of record/rows
     connection.commit()
     print(f'inserted successfully with query-params {cursor.rowcount}')
     cursor.close()
 
+
+def retrive_data(table_name, param):
+    cursor = connection.cursor()
+    # query = f"SELECT * FROM {table_name} where college LIKE '{param}%'"
+    query = f"SELECT * FROM {table_name} ORDER BY stream"
+    cursor.execute(query)
+    print(f'select query executed successfully')
+
+    # iterate on cursor resultset object
+    for row in cursor:
+        print(row)
+
+    # print(cursor.fetchone())
+    # print(cursor.fetchall())
+    # print(cursor.fetchmany())
+
+    cursor.close()
+
+
+def update_operation(table_name, id, value):
+    cursor = connection.cursor()
+    # query = f"UPDATE {table_name} SET address = '{value}' where  student_id = {id}"
+    query = f"UPDATE {table_name} SET stream = '{value}' where address = '{id}'"
+    cursor.execute(query)
+    print(f'update query executed successfullly {cursor.rowcount}')
+
+    connection.commit()  # saves the changes
+    cursor.close()
+
+def delete_operation(table_name, param1, param2):
+    cursor = connection.cursor()
+    query = f"DELETE FROM {table_name} where gender = '{param1}' AND address= '{param2}'"
+    cursor.execute(query)
+    connection.commit()  # saves the changes
+    print(f'delete query executed : {cursor.rowcount}')
+    cursor.close()
 
 # show_databases()
 show_tables()
@@ -124,3 +163,11 @@ product_data = [
 ]
 
 # insert_data_multiple(product_data)
+
+# retrive_data('student', 'Uni')
+
+# update_operation('student', 1, 'CO')
+# update_operation('student','CO', 'Computers')
+
+
+delete_operation('student', 'M', 'FL')
