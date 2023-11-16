@@ -107,7 +107,7 @@ def insert_data_multiple(values):
 
 
 # show_databases()
-# show_tables()
+show_tables()
 # drop_database('marveldb')
 
 # create_table('product_t')
@@ -123,4 +123,4 @@ product_data = [
     [6, 'motorla neo', 10, 2700]
 ]
 
-insert_data_multiple(product_data)
+# insert_data_multiple(product_data)
