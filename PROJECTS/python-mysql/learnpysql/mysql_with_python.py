@@ -170,4 +170,4 @@ product_data = [
 # update_operation('student','CO', 'Computers')
 
 
-delete_operation('student', 'M', 'FL')
+# delete_operation('student', 'M', 'FL')

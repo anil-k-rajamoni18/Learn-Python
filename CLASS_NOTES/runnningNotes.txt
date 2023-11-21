@@ -938,11 +938,32 @@ what is sqlalchemy?
 	cursor.executemany() 
 	
 4. Fetch the results stored in resultSet , using cursor object methods
-	cursor.fecth()
-	cursor.fetchOne()
-	cursor.fetchall() 
+    cursor.fetchone()
+    cursor.fetchall()
+    cursor.fetchmany()
 
 5. close 
 	cursor.close()
 	connection.close() 
 	
+
+
+################## MONGODB #######################
+
+CREATE: 
+	insertOne({})
+	insertMany([{},{}])
+READ
+	find()
+	findOne()
+	find().limit()
+	find().skip()
+	find().sort()
+	find().count()
+UPDATE:
+	updateOne({filter}, {$set: {new data}})
+	updateMany({filter}, {$set: {new data}})
+	
+DELETE:
+	deleteOne(filter)
+	deleteMany(filter)
