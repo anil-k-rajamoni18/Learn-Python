@@ -19,7 +19,7 @@ class MongoDBConnection:
 
                 if self.__collName in self.mydb.list_collection_names():
                     self.mycoll = self.mydb[self.__collName]  # creates coll object
-                    print(f'Connection successfull : {self.__dbName} : {self.__collName}')
+                    print(f'Connection successfully : {self.__dbName} : {self.__collName}')
                     return self.mycoll
                 else:
                     raise Exception('Collection not found with given name , please check..')
@@ -27,7 +27,7 @@ class MongoDBConnection:
             else:
                 raise Exception(' database not found with given name , please check ...')
         except Exception as e:
-            print(f'Exception occured while making client connection {e}')
+            print(f'Exception occurred while making client connection {e}')
 
 
 # dbObj = MongoDBConnection('AssignDB','todolist','mongodb://localhost:27017/')

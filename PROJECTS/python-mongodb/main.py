@@ -1,26 +1,16 @@
-from fastapi import FastAPI
+# This is a sample Python script.
 
-app = FastAPI()
-
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-# get endpoint
-@app.get("/api/greet")
-async def greet() -> str:
-    return f'Hello Welcome to fast api session'
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# endpoint with path variable
-@app.get("/api/greet/{name}")
-async def greet_user(name: str) -> dict:
-    return {"message": f"Hello {name}"}
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
 
-
-# query params
-@app.get("/api/add")
-async def addition(num1: int, num2: int) -> dict:
-    return {"addition": num1 + num2}
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/

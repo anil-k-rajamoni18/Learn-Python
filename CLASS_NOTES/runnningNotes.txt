@@ -950,6 +950,14 @@ what is sqlalchemy?
 
 ################## MONGODB #######################
 
+community server mongodb : https://www.mongodb.com/try/download/community
+mongosh[shell] : https://www.mongodb.com/docs/mongodb-shell/
+mongo compass :  UI for mongodb 
+
+ LOCALDB = mongodb://127.0.0.1:27017/
+ REMOTE DB: mongodb+srv://pythonsessionnov2023:<password>@cluster0.auavhzx.mongodb.net/?retryWrites=true&w=majority
+ 
+ 
 CREATE: 
 	insertOne({})
 	insertMany([{},{}])
@@ -967,3 +975,41 @@ UPDATE:
 DELETE:
 	deleteOne(filter)
 	deleteMany(filter)
+	
+	
+
+
+######## COLLECTION WITH SCHEMA  ############
+
+db.createCollection("contacts", {
+   validator: {$jsonSchema: {
+      bsonType: "object",
+      required: ["phone"],
+      properties: {
+         phone: {
+            bsonType: "string",
+            description: "must be a string and is required"
+         },
+         email: {
+            bsonType: "string",
+            pattern: "@mongodb\.com$",
+            description: "must be a string and match the regular expression pattern"
+         },
+         status: {
+            enum: [ "Unknown", "Incomplete" ],
+            description: "can only be one of the enum values"
+         }
+      }
+   }}
+})
+
+
+db.todolist.insertOne({"id" : "2",
+ "title": "Need to complete microservice architecture learning",
+ "onDate" : new ISODate("2023-11-21"),
+ cardColor: "blue",
+ isCompleted: false,
+ timestamps : new Date()
+ })
+ 
+ 
