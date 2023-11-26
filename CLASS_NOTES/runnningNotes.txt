@@ -954,9 +954,9 @@ community server mongodb : https://www.mongodb.com/try/download/community
 mongosh[shell] : https://www.mongodb.com/docs/mongodb-shell/
 mongo compass :  UI for mongodb 
 
- LOCALDB = mongodb://127.0.0.1:27017/
- REMOTE DB: mongodb+srv://pythonsessionnov2023:<password>@cluster0.auavhzx.mongodb.net/?retryWrites=true&w=majority
- 
+LOCALDB = mongodb://127.0.0.1:27017/
+REMOTE DB: mongodb+srv://pythonsessionnov2023:<password>@cluster0.auavhzx.mongodb.net/?retryWrites=true&w=majority
+
  
 CREATE: 
 	insertOne({})
@@ -1012,4 +1012,56 @@ db.todolist.insertOne({"id" : "2",
  timestamps : new Date()
  })
  
- 
+
+
+
+https://render.com/docs/deploy-fastapi
+
+-  create one todolist service project 
+	- install pymongo , fastapi, uvicorn
+	- integrate the mongodb connection 
+	- write endpoints 
+		get: /api/todo/{id} --> todo item 
+		get: /api/todo/all --> return all todo items 
+		post: /api/todo --> create new todo item in mongo collection
+		put: /api/todo/{id} --> update the existing todo item 
+		delete: /api/todo/{id} --> delete the todo item 
+		
+		
+- assignment : develop student management rest service 
+	- model-class:
+		    id: str | int
+			name: str
+			email: str
+			course: str
+			gpa: float
+			
+	- routes:
+		    POST /students/ - creates a new student.
+			GET /students/ - view a list of all students.
+			GET /students/{id} - view a single student.
+			PUT /students/{id} - update a student.
+			DELETE /students/{id} - delete a student.
+		
+
+===
+1.create one pycharm python project: student-service
+2. create this floder structure 
+├── app
+│   ├── __init__.py
+│   ├── main.py
+│   └── server
+│       ├── app.py
+│       ├── database.py
+│       ├── models
+│       └── routes
+└── requirements.txt
+
+3. Add the following dependencies to your requirements.txt file:
+	fastapi
+	uvicorn
+4. activate virtutalenv or open terminal in pycharm , run following command.
+
+	(venv): pip install -r requirements.txt
+	
+	
