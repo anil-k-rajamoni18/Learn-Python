@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EXAMPLE</title>
+</head>
+<body>
+    
+<button 
+    type="button" 
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.
+</button>
+
+<p id="demo">Demo Date</p>
+
+
+
+<p id="demo2"></p>
+
+
+<img id="myImage" src="pic_bulboff.gif" wdth="10i0" height="180" alt="myImage">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<script type="text/javascript">
+        document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+        document.getElementById("demo2").style.color = "red";
+        document.getElementById("demo2").style.fontSize = "45px";
+        
+
+        function light(sw) {
+             var pic;
+            if (sw == 0) {
+                 pic = "https://www.w3schools.com/html/pic_bulboff.gif"
+             } else {
+                 pic = "https://www.w3schools.com/html/pic_bulbon.gif"
+            }
+        document.getElementById('myImage').src = pic;
+}
+</script> 
+</body>
+</html>

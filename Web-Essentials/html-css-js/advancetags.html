@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- block level elemets -->
+    <p> Hello Today is Tuesday</p>
+    <p>Today data is 28th-Nov-2023</p>
+
+    <!-- inline elements -->
+    <b>chatGPT is developed using python + LLM</b> <br>
+    <b>Neural Networks requires lot of test-data</b> <br>
+
+    <!-- span tag -->
+    <span>Hello World HTML</span>
+    <span>Hello World JAVA</span>
+
+    <p>My Brother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p> 
+
+    <!-- div tag -->
+    <div style="background-color:green;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div> 
+
+      <br>
+    <!-- form tag -->
+    <div class="loginform">
+        <legend> <b>Login Form</b></legend>
+        <form action="api/login" method="POST">
+            <label id="username">Username: </label>
+            <input type="text" id="username" name="username">
+
+            <br>
+            <label id="password">Password: </label>
+            <input type="password" id="password" name="password">
+
+            <br>
+            <label id="email">Email: </label>
+            <input type="email" id="email name="email">
+
+            <br>
+            <button>LOGIN</button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+      <br>
+      <br>
+      <!-- table tag -->
+      <table>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$80</td>
+        </tr>
+      </table>
+
+      <div class ="student-table" id="student-tab">
+        <table>
+          <tr>
+            <th>id</th>
+            <th>studentname</th>
+            <th>college</th>
+            <th>stream</th>
+          </tr>
+          <tr>
+            <td>101</td>
+            <td>Bhanu</td>
+            <td>NGIT</td>
+            <td>CSE</td>
+          </tr>
+          <tr>
+           <td>102</td>
+          <td>Alex</td>
+          <td>CU</td>
+          <td>ECE</td>
+          </tr>
+        </table>
+      </div>
+</body>
+</html>

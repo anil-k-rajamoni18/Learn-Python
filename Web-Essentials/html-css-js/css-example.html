@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <!-- internal css -->
+    <style>
+        h4{
+            color: olivedrab;
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        body {
+            background-image: url("https://images.unsplash.com/photo-1700993229524-7b771e62875f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .studenttable{
+           background-color: wheat; 
+        }
+
+        #students {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #students td, #students th {
+        border: 1px solid #ddd;
+        padding: 10px;
+        }
+
+        #students tr:nth-child(even){background-color: #f2f2f2;}
+
+        #students tr:hover {background-color: #ddd;}
+
+        #students th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+        }
+    </style> 
+</head>
+<body>
+    <!-- inline css -->
+    <h1 style="color:red;font-family: Verdana, Geneva, Tahoma, sans-serif;">JAVA FEATURES </h1> 
+    <p style="color: chocolate;font-style: italic;">Java is Secure and Robust</p>
+
+    <h4>Today Topic CSS & JAVASCRIPT</h4>
+    <h4>CSS is used for styling webpage elemens</h4>
+
+    <div class ="studenttable" id="student-tab">
+        <table id="students">
+          <tr>
+            <th>id</th>
+            <th>studentname</th>
+            <th>college</th>
+            <th>stream</th>
+          </tr>
+          <tr>
+            <td>101</td>
+            <td>Bhanu</td>
+            <td>NGIT</td>
+            <td>CSE</td>
+          </tr>
+          <tr>
+           <td>102</td>
+          <td>Alex</td>
+          <td>CU</td>
+          <td>ECE</td>
+          </tr>
+        </table>
+    </div>
+</body>
+</html>
