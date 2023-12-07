@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+        <style>
+        #content {
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+            border: 10px solid gray;
+            margin: 0;
+            text-align: center;
+            align-content: center;
+         }
+        body{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <h1>Login</h1>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+
+        <form method="POST" action="{{url_for('login')}}">
+            <input type="text"
+            name="username"
+            placeholder="Username"> <br><br>
+
+         <input type="password"
+            name="password"
+            placeholder="Password"><br><br>
+        <button type="submit">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>

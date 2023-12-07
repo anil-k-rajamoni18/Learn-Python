@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        #content {
+            width: 400px;
+            height: 150px;
+            padding: 10px;
+            border: 10px solid gray;
+            margin: 0;
+            text-align: center;
+            align-content: center;
+         }
+        body{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Home Page</h1>
+        {% if username %}
+            <p>Hello, {{ username }} you have already logged in</p>
+            <a href="{{url_for('logout')}}"><b>Logout</b></a>
+        {% else %}
+        <p> You are not logged in. Please
+            <a href="{{url_for('login')}}"><b>Login</b></a>  OR
+            <a href="{{ url_for('register') }}"><b>Register</b></a>
+            to access HomePage
+        </p>
+
+        {% endif %}
+    </div>
+</body>
+</html>

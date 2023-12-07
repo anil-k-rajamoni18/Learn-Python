@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+        <style>
+        #content {
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+            border: 10px solid gray;
+            margin: 0;
+            text-align: center;
+            align-content: center;
+         }
+        body{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Register NEW User </h1>
+        <form method="POST" action="{{url_for('register')}}">
+            <input type="text"
+                name="username"
+                placeholder="Username"> <br><br>
+
+            <input type="email"
+                name="email"
+                placeholder="Email"> <br><br>
+
+            <input type="password"
+                name="password"
+                placeholder="Password"> <br><br>
+
+            <button type="submit">REGISTER</button>
+        </form>
+    </div>
+</body>
+</html>
