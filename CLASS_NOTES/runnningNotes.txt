@@ -1065,3 +1065,148 @@ https://render.com/docs/deploy-fastapi
 	(venv): pip install -r requirements.txt
 	
 	
+### FLASK ###
+
+3 ways to run flask application 
+-------------------------------------
+1. set FLASK_APP=filename 
+	flask run 
+	
+2. flask --app filename run --debug  --port 1122
+
+3. if __name__ == '__main__':
+    app.run(host="0.0.0.0", debug=True, port=1133)
+	
+	python filename.py 
+	
+	
+@app.get() 
+@app.post() 
+@app.put() 
+@app.delete() 
+
+@app.route("/", methods= ["GET"])
+	
+GET ENDPOINT
+- /
+- /hello 
+- Path variable: /welcome/<name>
+	- /welcome/kumar  : path variable 
+	- /welcome/bhanu : path variable
+- Request params 
+	- /add?num1=10&num2=20  -----request-- backend server----- request.args['num1] request.args['num2]
+	- request object 
+	
+	
+POST ENDPOINT 
+==============
+
+- /student   ---------------- request ---------- backend api ----> request.get_json()
+	passing json {}
+	
+	
+### REQUEST 
+request.args 
+request.form 
+request.get_json() 
+request.files
+
+	
+Jinja2 Templates 
+=====================
+variables : {{ variable }}
+conditional statements: {% if condition %}
+						{% else %}
+						{% endif %}
+						
+looping : {% for %}
+		  {%end%}
+		  
+		  
+		  
+name: None  -> Hello world 
+name: "kumar"  --> Hello user kumar
+
+- Minimal application 
+- Debug Mode : debug = True
+- HTML Escaping
+- Routing 
+	GET 
+	POST 
+- Variable Rules
+- static files 
+- Rendering Templates : render_templates 
+- Accessing Request Obj Data 
+- Cookies 
+
+- Redirect & Errors 
+- Sessions 
+- Logging 
+	logger.info()
+	logger.debug()
+	logger.error()
+	logger.warn()
+	logger.trace() 
+	
+- DB Intergation: mongodb 
+
+
+
+## FLASK WITH DATABASE ###
+
+MYSQL 
+mysql-connector-python
+flask_mysqldb
+
+MONGODB 
+pymongo
+flask_mongoengine 
+
+
+'mongodb+srv://kumar:<password>@cluster0.kxshv3i.mongodb.net/?retryWrites=true&w=majority';
+
+
+### ML Libs
+	- numpy : numerical python
+	- pandas: data management/
+	- seaborn : data visuliation
+	- sklearn/scikit-learn : package for ml algos
+	
+	
+numpy 
+============
+	numpy.array([], ndim, dtype)  --> numpy.ndarray (shape, dtype, size,ndim) 
+	
+	numpy.mat([] or np.array)
+	numpy.asarray()  --> numpy.ndarray
+	numpy.asanyarray()  --> numpy.ndarray 
+	numpy.copy() 
+	numpy.fromfunction()
+	np.fromiter() 
+	np.fromstring()
+	np.arange(start,stop,step) # both ints, float
+	np.linespace(start,stop,limit) 
+	np.logspace()
+	
+
+random
+	random.randint(start,stop)
+	random.random() --> random float value 0-1
+	random.randrange(start,stop,step) 
+	
+numpy.random 
+	numpy.random.rand(10,4) --> uniformly 
+	numpy.random.randint(start,stop,step)
+	np.sort() 
+	np.sqrt()
+	np.exp()
+	np.log10()
+	 np.fmod()
+	 
+	 
+	
+	
+	
+	
+	
+			
